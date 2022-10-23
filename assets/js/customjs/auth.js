@@ -39,7 +39,7 @@ $(document).ready(function(){
         $.ajax({
             url:"../api/logout.php",
             success:function(response){
-                window.location.href="../auth/index.php";
+                window.location.href="../auth/login.php";
             }
         })
     });

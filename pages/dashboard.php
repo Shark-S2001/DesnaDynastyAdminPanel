@@ -1,10 +1,11 @@
 <?php
-require_once("../includes/header.php");
-//Check if session has data
-if(!isset($_SESSION["user"])){
-	//If Session is not Set, redirect back to Login Page
-	header("Location:https://desnadynastyagency.co.ke/admin/auth");
-}
+  require_once("../includes/header.php");
+
+  //Check if session has data
+  if(!isset($_SESSION["user"])){
+    //If Session is not Set, redirect back to Login Page
+    header("Location:https://admin.desnadynastyagency.co.ke");
+  }
  ?>
  
     <!-- partial:partials/_navbar.html -->
