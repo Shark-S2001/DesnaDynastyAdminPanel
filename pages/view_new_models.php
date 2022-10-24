@@ -1,7 +1,7 @@
 <?php 
   require_once("dashboard.php");
 
-    $stmt = $conn->prepare("SELECT * FROM models WHERE approved=0");
+    $stmt = $conn->prepare("SELECT * FROM model WHERE approved=0");
     $stmt->execute();
 ?>
 <div class="pcoded-main-container">
