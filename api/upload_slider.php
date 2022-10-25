@@ -14,8 +14,6 @@
     require_once("../config/sessions.php");
    
 
-    
-
     uploadSlider();
   
     function uploadSlider(){
