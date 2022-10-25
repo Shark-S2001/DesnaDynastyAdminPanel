@@ -32,7 +32,7 @@
         }else{
 
             $filename = rename_image($_FILES['file']['name'],$id_number);
-            if(move_uploaded_file($_FILES['file']['tmp_name'],'../../images/sliders/'.$filename)){
+            if(move_uploaded_file($_FILES['file']['tmp_name'],$_SESSION['path'].'sliders/'.$filename)){
                 $response["status"] = "success";
                 $response["message"] ="Slider Uploaded Successfully";
             }else{

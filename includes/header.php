@@ -5,6 +5,9 @@
   require_once("../config/sessions.php");
   require_once("../config/database.php");
   require_once("../config/functions.php");
+
+  $_SESSION['path']="/home/docker/websites/ddmodelswebsite/src/images/";
+
 ?>
 <!DOCTYPE html>
 <html lang="en">
