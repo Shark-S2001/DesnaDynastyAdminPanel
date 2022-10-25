@@ -32,7 +32,7 @@
 
             $_SESSION["event_image_path"] = $filename;
             
-            if(move_uploaded_file($_FILES['file']['tmp_name'],'../../images/events/'.$filename)){
+            if(move_uploaded_file($_FILES['file']['tmp_name'],$_SESSION['path'].'events/'.$filename)){
                 $response["status"] = "success";
                 $response["message"] ="Events Image Uploaded Successfully";
             }else{

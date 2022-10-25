@@ -6,7 +6,7 @@
   require_once("../config/database.php");
   require_once("../config/functions.php");
 
-  $_SESSION['path']="/home/docker/websites/ddmodelswebsite/src/images/";
+  $_SESSION['path']="/ddsharedvolume";
 
 ?>
 <!DOCTYPE html>
