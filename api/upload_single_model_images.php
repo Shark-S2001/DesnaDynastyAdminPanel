@@ -22,7 +22,7 @@
     $_SESSION['no_of_images']= $countphotos;
 
     //Upload Directory
-    $upload_location = $_SESSION['path']."single_model_photos/";
+    $upload_location = $_SESSION['path'].'/'."single_model_photos/";
 
     //To Store uploaded files path
     $files_arr = array();

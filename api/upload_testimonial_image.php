@@ -30,7 +30,7 @@
         }else{
 
             $filename = rename_image($_FILES['file']['name'],$id_number);
-            if(move_uploaded_file($_FILES['file']['tmp_name'],$_SESSION['path'].'testimonial/'.$filename)){
+            if(move_uploaded_file($_FILES['file']['tmp_name'],$_SESSION['path'].'/'.'testimonial/'.$filename)){
                 $response["status"] = "success";
                 $response["message"] ="Testimonial Image Uploaded Successfully";
             }else{

@@ -33,7 +33,7 @@
 
             $_SESSION["blog_image_path"] = $filename;
             
-            if(move_uploaded_file($_FILES['file']['tmp_name'],$_SESSION['path'].'blogs/'.$filename)){
+            if(move_uploaded_file($_FILES['file']['tmp_name'],$_SESSION['path'].'/'.'blogs/'.$filename)){
                 $response["status"] = "success";
                 $response["message"] ="Blog Image Uploaded Successfully";
             }else{

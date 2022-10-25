@@ -30,7 +30,7 @@
 
             $filename = rename_image($_FILES['file']['name'],$id_number);
             
-            if(move_uploaded_file($_FILES['file']['tmp_name'],$_SESSION['path'].'promo_videos/'.$filename)){
+            if(move_uploaded_file($_FILES['file']['tmp_name'],$_SESSION['path'].'/'.'promo_videos/'.$filename)){
                 $response["status"] = "success";
                 $response["message"] ="Promo Video Uploaded Successfully";
             }else{

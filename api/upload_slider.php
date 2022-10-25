@@ -19,7 +19,7 @@
     function uploadSlider(){
         $response = array();
         //Change to Session
-        $id_number = time();
+        $current_timestamp = time();
 
         if(0<$_FILES['file']['error']){
 
@@ -29,7 +29,7 @@
 
         }else{
 
-            $filename = rename_image($_FILES['file']['name'],$id_number);
+            $filename = rename_image($_FILES['file']['name'],$current_timestamp);
             if(move_uploaded_file($_FILES['file']['tmp_name'],$_SESSION['path'].'/'.'sliders/'.$filename)){
                 $response["status"] = "success";
                 $response["message"] ="Slider Uploaded Successfully";
