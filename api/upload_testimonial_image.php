@@ -36,9 +36,7 @@
             }else{
                 $response["status"] = "error";
                 $response["message"] ="Error Occurred while uploading image";
-            }
-
-           
+            }           
 
         }
 

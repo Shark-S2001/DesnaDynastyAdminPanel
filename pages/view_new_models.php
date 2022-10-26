@@ -35,7 +35,12 @@
                     			   <div class="card">
                     				<div class="item-media">
                     				<a class="p-link" title="" href="single-model.php?id=<?=$row["id"]?>">
-                    					<img src="../../images/new_models/<?=$row["image_path"]?>" style="object-fit: scale-down; max-width: 100%" alt="">
+                    					<!-- <img src="../../images/new_models/<?=$row["image_path"]?>" style="object-fit: scale-down; max-width: 100%" alt=""> -->
+										<?
+											//Echo image from docker volume
+											$im = file_get_contents($_SESSION["path"]."/"."models/".$row["image_path"]);
+											echo "<img src='data:image/jpg;base64,".base64_encode($im)."' alt='Event Images' >";
+										?>
                     				</a>
                     					<div class="media-links">
                     					</div>
@@ -45,7 +50,7 @@
                                         <div class="card-body">
                                             <div class="links-wrap">
                         						Name: <a class="p-link" title=""     href="#">         <?=$row["model_name"]    ?></a>
-                        						<a class="p-view prettyPhoto        pull-right" title="" data-gal        ="prettyPhoto[gal]" href="../../images     /new_models/<?=$row["image_path"]?>"         style="object-fit: scale-down;      max-width: 100%"></a>
+                        						<!-- <a class="p-view prettyPhoto        pull-right" title="" data-gal        ="prettyPhoto[gal]" href="../../images/new_models/<?=$row["image_path"]?>"         style="object-fit: scale-down;      max-width: 100%"></a> -->
                         					</div>
                         					 <div>
                     					        <span>Gender: <?=strtoupper        ($row["gender"])?></span>

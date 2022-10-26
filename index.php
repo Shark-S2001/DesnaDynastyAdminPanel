@@ -1,5 +1,4 @@
 <?php	 
-//redirect 
-header('location:auth/login.php');
-
+    //redirect 
+    header('location:auth/login.php');
 ?>

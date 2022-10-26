@@ -52,12 +52,13 @@
 
              exit();
         }{
-            $sql = "INSERT INTO model(model_name,height,bust,waist,hips,shoe_size,about_model,id_number,image_path)VALUES(?,?,?,?,?,?,?,?,?)";
+            $sql = "INSERT INTO model(model_name, email_address, id_number, height, bust, waist, hips, shoe_size, phone_number, gender, dob, home_town, about_model, image_path, approved)
+                    VALUES(?,?,?,?,?,?,?,?,?,?,?,?,?,?,?)";
             $stmt = $conn->prepare($sql);
     
             try{
                 $conn ->beginTransaction();
-                $stmt->execute(array($model_name,$height,$bust,$waist,$hips,$shoe_size,$about_model,$id_number,$image_path));
+                $stmt->execute(array($model_name,"default@email.com",$id_number,$height,$bust,$waist,$hips,$shoe_size,"07********","unknown","2000-01-01","unknown",$about_model,$image_path,"1"));
                 //Commit Transaction
                 $conn->commit();
         
