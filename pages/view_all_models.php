@@ -1,7 +1,7 @@
 <?php 
   require_once("dashboard.php");
 
-    $stmt = $conn->prepare("SELECT * FROM model WHERE approved=0");
+    $stmt = $conn->prepare("SELECT * FROM model WHERE approved<>2");
     $stmt->execute();
 ?>
 <div class="pcoded-main-container">
@@ -18,7 +18,7 @@
                                 <div class="row align-items-center">
                                 <div class="col-md-12">
                                         <div class="page-header-title">
-                                            <h5 class="m-b-10">Newly Registered Models</h5>
+                                            <h5 class="m-b-10">View All Models</h5>
                                         </div>
                                     </div>
                                 </div>
@@ -67,8 +67,10 @@
                     					        <span>Residence:                  <?=$row["home_town"]?></span>
                     					    </div>
                     					    <br/>
-                    					    <div class="approveDiv" id="<?=$row["approved"]?>">
-                            					<button type="button" class="btn btn-outline-success" id="<?=$row["id"]?>">Approve Model</button>
+                    					    <div>
+                                            <button type="button" class="btn btn-outline-success btnDis" id="<?=$row["id"]?>">Disapprove Model</button>
+                                            <br/><br/>
+                                            <button type="button" class="btn btn-outline-danger btnDel" id="<?=$row["id"]?>">Delete Model</button>
                     					    </div>
                     					    <br/>
                     					 </div>
@@ -91,5 +93,7 @@
     </div>
 </div>
 <?php require_once("../includes/footer.php") ?>
-<script type="text/javascript" src="../../../assets/js/customjs/approve_model.js"></script>
+<script type="text/javascript" src="../../../assets/js/customjs/disapprove_model.js"></script>
+<script type="text/javascript" src="../../../assets/js/customjs/delete_model.js"></script>
+
 

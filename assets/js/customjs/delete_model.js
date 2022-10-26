@@ -1,18 +1,12 @@
 $(document).ready(function(){
 
-    $('.approveDiv').each(function( index ){        
-        var appv = $(this).attr('id');
-        //alert(appv);
-    });
-
-
-    $(".btn").click(function(e){
+    $(".btnDel").click(function(e){
         e.preventDefault();
 
         var id = $(this).attr('id');
 
         $.ajax({
-            url: "../api/approve_model.php",
+            url: "../api/delete_model.php",
             method: "POST",
             dataType:"json",
             data: { id:id },

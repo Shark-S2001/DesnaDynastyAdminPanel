@@ -103,9 +103,15 @@
             </a>
           </li>
           <li class="nav-item">
+            <a class="nav-link" href="view_all_models.php">
+              <i class="feather icon-eye"></i> 
+              <span class="menu-title">&nbsp;&nbsp;view All Models</span>
+            </a>
+          </li>
+          <li class="nav-item">
             <a class="nav-link" href="view_new_models.php">
               <i class="feather icon-plus"></i> 
-              <span class="menu-title">&nbsp;&nbsp;Registered Models</span>
+              <span class="menu-title">&nbsp;&nbsp;view New Models</span>
             </a>
           </li>
         </ul>
