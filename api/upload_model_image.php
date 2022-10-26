@@ -53,7 +53,7 @@
                     
                     $_SESSION["model_image_path"] = $filename;
 
-                    if(move_uploaded_file($_FILES['file']['tmp_name'],$_SESSION['path'].'/'.'images/models/'.$filename)){
+                    if(move_uploaded_file($_FILES['file']['tmp_name'],$_SESSION['path'].'/'.'models/'.$filename)){
                         $response["status"] = "success";
                         $response["message"] ="Model Image Uploaded Successfully";
                     }else{
