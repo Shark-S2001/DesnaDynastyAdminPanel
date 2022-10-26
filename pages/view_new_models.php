@@ -33,14 +33,16 @@
                     		<div class="isotope-item col-lg-3 col-md-4 col-sm-6">
                     			<div class="vertical-item content-absolute">
                     			   <div class="card">
-                    				<div class="item-media">
-                    				<a class="p-link" title="" href="single-model.php?id=<?=$row["id"]?>">
+                    				<div class="item-media">                    				
+										<br/>
+										<div style="width:100%; text-align:center">
                     					<!-- <img src="../../images/new_models/<?=$row["image_path"]?>" style="object-fit: scale-down; max-width: 100%" alt=""> -->
 										<?
 											//Echo image from docker volume
 											$im = file_get_contents($_SESSION["path"]."/"."models/".$row["image_path"]);
-											echo "<img src='data:image/jpg;base64,".base64_encode($im)."' alt='Event Images' >";
+											echo "<img src='data:image/jpg;base64,".base64_encode($im)."' alt='new model Image' style='object-fit: cover; max-width: auto;height: 200px;border-radius: 300px;' >";
 										?>
+										</div>
                     				</a>
                     					<div class="media-links">
                     					</div>
