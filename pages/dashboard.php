@@ -126,7 +126,6 @@
   <script src="../assets/vendors/js/vendor.bundle.base.js"></script>
   <!-- endinject -->
   <!-- Plugin js for this page -->
-  <script src="../assets/vendors/chart.js/Chart.min.js"></script>
   <script src="../assets/vendors/datatables.net/jquery.dataTables.js"></script>
   <script src="../assets/vendors/datatables.net-bs4/dataTables.bootstrap4.js"></script>
   <script src="../assets/js/js/dataTables.select.min.js"></script>
@@ -141,8 +140,7 @@
   <!-- endinject -->
   <!-- Custom js for this page-->
   <script src="../assets/js/js/dashboard.js"></script>
-  <script src="../assets/js/js/Chart.roundedBarCharts.js"></script>
-  <!-- End custom js for this page-->
+    <!-- End custom js for this page-->
   <script type="text/javascript" src="../assets/js/customjs/auth.js"></script> 
   <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/toastify-js"></script>
   <script type="text/javascript" src="../assets/js/notify.min.js"></script> 
