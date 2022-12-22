@@ -1,8 +1,6 @@
 <?php 
-require_once("dashboard.php"); 
-
+    require_once("dashboard.php"); 
 ?>
-
 <div class="pcoded-main-container">
         <div class="pcoded-wrapper">
             <div class="pcoded-content">

@@ -1,4 +1,4 @@
-<?php
+<!-- <?php
   require_once("../includes/header.php");
 
   //Check if session has data
@@ -6,7 +6,7 @@
     //If Session is not Set, redirect back to Login Page
     header("Location:https://admin.desnadynastyagency.co.ke");
   }
- ?>
+ ?> -->
  
     <!-- partial:partials/_navbar.html -->
     <nav class="navbar col-lg-12 col-12 p-0 fixed-top d-flex flex-row">
@@ -119,8 +119,6 @@
       <!-- partial -->
       <div class="main-panel">
         <div class="content-wrapper">
-
-
 
   <!-- plugins:js -->
   <script src="../assets/vendors/js/vendor.bundle.base.js"></script>

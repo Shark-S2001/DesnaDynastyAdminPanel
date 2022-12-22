@@ -36,13 +36,12 @@
                     				<div class="item-media">                    				
 										<br/>
 										<div style="width:100%; text-align:center">
-                    					<!-- <img src="../../images/new_models/<?=$row["image_path"]?>" style="object-fit: scale-down; max-width: 100%" alt=""> -->
-										<?
-											//Echo image from docker volume
+										<?php
+											// //Echo image from docker volume
 											$im = file_get_contents($_SESSION["path"]."/"."models/".$row["image_path"]);
 											echo "<img src='data:image/jpg;base64,".base64_encode($im)."' alt='new model Image' style='object-fit: cover; max-width: auto;height: 200px;border-radius: 300px;' >";
 										?>
-										</div>
+									</div>
                     				</a>
                     					<div class="media-links">
                     					</div>
@@ -75,15 +74,12 @@
                     					    <br/>
                     					 </div>
                     					 </div>  
-                    					
-                    					
                     				</div>
                     				<br/>
                     			</div>
                     		</div>
                     		<?php endforeach ?>
-                    	</div>
-                    
+                    	</div>                    
                     </div>
                 </section>
                     </div>

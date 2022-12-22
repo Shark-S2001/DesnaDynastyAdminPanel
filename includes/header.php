@@ -6,7 +6,7 @@
   require_once("../config/database.php");
   require_once("../config/functions.php");
 
-  $_SESSION['path']="/ddsharedvolume";
+  $_SESSION['path']="../../images";  
 
 ?>
 <!DOCTYPE html>
@@ -16,7 +16,7 @@
   <!-- Required meta tags -->
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-  <title style="text-align: center" class="d-sm-none">Admin Portal</title>
+  <title style="text-align: center" class="d-sm-none">D.D Models - Admin Portal</title>
   <link rel="shortcut icon" href="https://www.domain.com/favicon.ico" />
   <!-- plugins:css -->
   <link rel="stylesheet" href="../assets/vendors/feather/feather.css">

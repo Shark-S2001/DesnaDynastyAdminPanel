@@ -18,7 +18,7 @@ $(document).ready(function(){
                 success:function(response){
                     if(response.status=="Success"){
                         //Redirect the user to Dashboard
-                        window.location.href="../pages/dashboard.php";
+                        window.location.href="../pages/view_all_models.php";
                         
                     }else{
                         Toastify({
