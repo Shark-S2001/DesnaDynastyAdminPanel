@@ -63,5 +63,5 @@
     </div>
 </div>
 <?php require_once("../includes/footer.php") ?>
-<script type="text/javascript" src="../assets/js/customjs/save_about_us.js"></script>
+<script type="text/javascript" src="../../../admin/assets/js/customjs/save_about_us.js"></script>
 

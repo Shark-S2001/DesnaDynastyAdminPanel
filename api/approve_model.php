@@ -36,6 +36,4 @@ require_once("../config/sessions.php");
     header("Content-type:application/json;charset=UTF-8");
     echo json_encode($response);
  }
-
-
 ?>

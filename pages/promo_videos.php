@@ -57,5 +57,5 @@
         </div>
     </div>
     <?php require_once("../includes/footer.php") ?>
-    <script type="text/javascript" src="../assets/js/customjs/add_promo_video.js"></script>
+    <script type="text/javascript" src="../../../admin/assets/js/customjs/add_promo_video.js"></script>
 

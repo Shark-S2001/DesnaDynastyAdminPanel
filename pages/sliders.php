@@ -57,6 +57,6 @@ require_once("dashboard.php") ?>
         </div>
     </div>
     <?php require_once("../includes/footer.php") ?>
-    <script type="text/javascript" src="../assets/js/customjs/save_slider.js"></script>
+    <script type="text/javascript" src="../../../admin/assets/js/customjs/save_slider.js"></script>
 
 

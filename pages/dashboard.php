@@ -1,12 +1,12 @@
-<!-- <?php
+<?php
   require_once("../includes/header.php");
 
   //Check if session has data
   if(!isset($_SESSION["user"])){
     //If Session is not Set, redirect back to Login Page
-    header("Location:https://admin.desnadynastyagency.co.ke");
+    header("Location:https://www.desnadynastyagency.co.ke/admin");
   }
- ?> -->
+ ?> 
  
     <!-- partial:partials/_navbar.html -->
     <nav class="navbar col-lg-12 col-12 p-0 fixed-top d-flex flex-row">
@@ -139,6 +139,6 @@
   <!-- Custom js for this page-->
   <script src="../assets/js/js/dashboard.js"></script>
     <!-- End custom js for this page-->
-  <script type="text/javascript" src="../assets/js/customjs/auth.js"></script> 
+  <script type="text/javascript" src="../../../admin/assets/js/customjs/auth.js"></script> 
   <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/toastify-js"></script>
-  <script type="text/javascript" src="../assets/js/notify.min.js"></script> 
+  <script type="text/javascript" src="../../../admin/assets/js/notify.min.js"></script> 

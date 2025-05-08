@@ -64,6 +64,6 @@ require_once("dashboard.php") ?>
         </div>
     </div>
     <?php require_once("../includes/footer.php") ?>
-    <script type="text/javascript" src="../assets/js/customjs/upload_single_model_images.js"></script>
+    <script type="text/javascript" src="../../../admin/assets/js/customjs/upload_single_model_images.js"></script>
 
 

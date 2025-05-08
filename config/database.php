@@ -1,13 +1,13 @@
 <?php
 
-        // define("BASEPATH",true);
-        // defined('BASEPATH')OR exit('<h3>Nodirectscriptaccessallowed</h3>');
+    // define("BASEPATH",true);
+    // defined('BASEPATH')OR exit('<h3>Nodirectscriptaccessallowed</h3>');
 
 
-    $server ="192.168.0.100";
-    $db="ddmodels";
-    $uid ="root";
-    $pwd ="Kiarithaini";
+    $server ="154.12.227.14";
+    $db="desnadynasty";
+    $uid ="steve";
+    $pwd ="Kiarithaini@7066";
     $port = 3306;
 
     try{

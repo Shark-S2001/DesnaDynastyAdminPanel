@@ -15,7 +15,6 @@
 
     saveBlog($conn);
     
-
     function saveBlog($conn){
         $response = array();
         $blog_title =clean_input($_POST["blog_title"]);

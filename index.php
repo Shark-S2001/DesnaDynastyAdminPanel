@@ -1,4 +1,4 @@
 <?php	 
     //redirect 
-    header('location:auth/login.php');
+    header('location:/admin/auth/login.php');
 ?>

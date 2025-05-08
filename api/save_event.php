@@ -14,7 +14,6 @@
     require_once("../config/sessions.php");
 
     saveEvent($conn);
-    
 
     function saveEvent($conn){
         $response = array();

@@ -12,7 +12,7 @@
     require_once("../../config/sessions.php");
     
     if(session_destroy()){
-        header("Location:https://admin.desnadynastyagency.co.ke/");
+        header("Location:https://www.desnadynastyagency.co.ke/admin");
     }
 
 ?>
